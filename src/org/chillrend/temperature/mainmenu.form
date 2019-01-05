@@ -23,13 +23,67 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="144" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="fahrtokelv" min="-2" pref="217" max="-2" attributes="0"/>
+                          <Component id="celctofahr" min="-2" pref="217" max="-2" attributes="0"/>
+                          <Component id="celctokelv" alignment="0" min="-2" pref="217" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace pref="135" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" pref="23" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="49" max="-2" attributes="0"/>
+              <Component id="celctofahr" min="-2" pref="54" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="fahrtokelv" min="-2" pref="54" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="celctokelv" min="-2" pref="54" max="-2" attributes="0"/>
+              <EmptySpace pref="71" max="32767" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
   </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Roboto Light" size="18" style="0"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Temperature Converter"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="celctofahr">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Celcius (&#xb0;C) and Fahrenheit (&#xb0;F)"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="celctofahrActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="fahrtokelv">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Fahrenheit (&#xb0;F) and Kelvin (K)"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="celctokelv">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Celcius (&#xb0;C) and Kelvin (K)"/>
+      </Properties>
+    </Component>
+  </SubComponents>
 </Form>
