@@ -119,7 +119,7 @@ public class fahrenheitkelvin extends javax.swing.JFrame {
         float kelv = Float.parseFloat(kelvin.getText());
         float fahr = (float) ((kelv - 273.15) * 9/5 + 32);
         
-        //bugfix
+        //reverted bug fix
         fahrenheit.setText(String.valueOf(fahr));
 
     }//GEN-LAST:event_kelvinFocusLost
