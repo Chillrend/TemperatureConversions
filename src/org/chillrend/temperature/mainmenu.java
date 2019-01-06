@@ -45,6 +45,11 @@ public class mainmenu extends javax.swing.JFrame {
         });
 
         fahrtokelv.setText("Fahrenheit (°F) and Kelvin (K)");
+        fahrtokelv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fahrtokelvActionPerformed(evt);
+            }
+        });
 
         celctokelv.setText("Celcius (°C) and Kelvin (K)");
 
@@ -89,6 +94,13 @@ public class mainmenu extends javax.swing.JFrame {
         celcfahr.setVisible(true);
     // TODO add your handling code here:
     }//GEN-LAST:event_celctofahrActionPerformed
+
+    private void fahrtokelvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fahrtokelvActionPerformed
+        this.dispose();
+        fahrenheitkelvin fahrkelv = new fahrenheitkelvin();
+        fahrkelv.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_fahrtokelvActionPerformed
 
     /**
      * @param args the command line arguments

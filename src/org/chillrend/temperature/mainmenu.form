@@ -79,6 +79,9 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Fahrenheit (&#xb0;F) and Kelvin (K)"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="fahrtokelvActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="celctokelv">
       <Properties>
