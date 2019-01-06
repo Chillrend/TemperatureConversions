@@ -7,14 +7,14 @@ package org.chillrend.temperature;
 
 /**
  *
- * @author X453SA
+ * @author MHendhyS
  */
-public class fahrenheitkelvin extends javax.swing.JFrame {
+public class celciuskelvin extends javax.swing.JFrame {
 
     /**
-     * Creates new form fahrenheitkelvin
+     * Creates new form celciuskelvin
      */
-    public fahrenheitkelvin() {
+    public celciuskelvin() {
         initComponents();
     }
 
@@ -27,28 +27,22 @@ public class fahrenheitkelvin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        fahrenheit = new javax.swing.JTextField();
+        kelvin = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        kelvin = new javax.swing.JTextField();
+        celcius = new javax.swing.JTextField();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel3.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        jLabel3.setText("K");
-
-        jLabel4.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
-        jLabel4.setText("°F");
 
         jLabel5.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
         jLabel5.setText("Enter Fahrenheit Unit");
 
-        fahrenheit.addFocusListener(new java.awt.event.FocusAdapter() {
+        kelvin.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
-                fahrenheitFocusLost(evt);
+                kelvinFocusLost(evt);
             }
         });
 
@@ -58,16 +52,17 @@ public class fahrenheitkelvin extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
         jLabel2.setText("Enter Kelvin Units");
 
-        kelvin.addFocusListener(new java.awt.event.FocusAdapter() {
+        celcius.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
-                kelvinFocusLost(evt);
+                celciusFocusLost(evt);
             }
         });
-        kelvin.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                kelvinActionPerformed(evt);
-            }
-        });
+
+        jLabel6.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
+        jLabel6.setText("°C");
+
+        jLabel3.setFont(new java.awt.Font("Roboto Light", 0, 18)); // NOI18N
+        jLabel3.setText("K");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -78,17 +73,17 @@ public class fahrenheitkelvin extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
-                            .addComponent(kelvin, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(jLabel3))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(fahrenheit, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(celcius, javax.swing.GroupLayout.PREFERRED_SIZE, 137, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(jLabel4)))
+                            .addComponent(jLabel6))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addComponent(kelvin, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jLabel3)))
                     .addComponent(jLabel1)
                     .addComponent(jLabel2)
                     .addComponent(jLabel5))
-                .addContainerGap(88, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -99,39 +94,34 @@ public class fahrenheitkelvin extends javax.swing.JFrame {
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(kelvin, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(celcius, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(fahrenheit, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(38, Short.MAX_VALUE))
+                    .addComponent(kelvin, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void fahrenheitFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_fahrenheitFocusLost
-        float fahr = Float.parseFloat(fahrenheit.getText());
-        float kelv = (float) ((fahr - 32) * 5/9 + 273.15);
-
-        kelvin.setText(String.valueOf(kelv));
-    }//GEN-LAST:event_fahrenheitFocusLost
-
     private void kelvinFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_kelvinFocusLost
         float kelv = Float.parseFloat(kelvin.getText());
-        float fahr = (float) ((kelv - 273.15) * 9/5 + 32);
-        
-        //reverted bug fix
-        fahrenheit.setText(String.valueOf(fahr));
+        float celci = (float) (kelv - 273);
 
+        celcius.setText(String.valueOf(celci));
     }//GEN-LAST:event_kelvinFocusLost
 
-    private void kelvinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kelvinActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_kelvinActionPerformed
+    private void celciusFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_celciusFocusLost
+        float celci = Float.parseFloat(celcius.getText());
+        float kelv = (float) (celci + 273);
+
+        //reverted bug fix
+        kelvin.setText(String.valueOf(kelv));
+    }//GEN-LAST:event_celciusFocusLost
 
     /**
      * @param args the command line arguments
@@ -150,31 +140,31 @@ public class fahrenheitkelvin extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(fahrenheitkelvin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(celciuskelvin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(fahrenheitkelvin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(celciuskelvin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(fahrenheitkelvin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(celciuskelvin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(fahrenheitkelvin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(celciuskelvin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new fahrenheitkelvin().setVisible(true);
+                new celciuskelvin().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField fahrenheit;
+    private javax.swing.JTextField celcius;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JTextField kelvin;
     // End of variables declaration//GEN-END:variables
 }

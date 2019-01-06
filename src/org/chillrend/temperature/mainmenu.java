@@ -52,6 +52,11 @@ public class mainmenu extends javax.swing.JFrame {
         });
 
         celctokelv.setText("Celcius (°C) and Kelvin (K)");
+        celctokelv.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                celctokelvActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -101,6 +106,13 @@ public class mainmenu extends javax.swing.JFrame {
         fahrkelv.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_fahrtokelvActionPerformed
+
+    private void celctokelvActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_celctokelvActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+        celciuskelvin CtoK = new celciuskelvin();
+        CtoK.setVisible(true);
+    }//GEN-LAST:event_celctokelvActionPerformed
 
     /**
      * @param args the command line arguments
